@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  background: #111 url('../img/background.png') no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+
+.icon {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.text > p {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Pacifico', cursive;
+  /*background-color: rgba(0, 0, 0, 0.65);*/
+}
+
+.email {
+  color: white;
+  font-weight: 600;
+  display: block;
+  font-size: 16px;
+}
+
+.second {
+  padding-top: 15px;
+}
+
+@media (orientation: landscape) {
+  .icon {
+    top: 50%;
+  }
+  .container {
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon > img {
+    height: 300px;
+    width: 300px;
+  }
+  .text > p {
+    font-size: 60px;
+  }
+  .email {
+    font-size: 22px;
+  }
+}
