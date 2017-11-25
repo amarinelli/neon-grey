@@ -13,36 +13,35 @@ body {
   text-shadow: 1px 1px #000;
 }
 
-.icon {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.video {
+  margin-top: 10%;
 }
 
-.icon > img {
-  height: 150px;
-  width: 150px;
-  border-radius: 20px;
+.video > video {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 50px 3px rgba(0,0,0,1);
+  opacity: 0.8;
 }
 
 .container {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .text > p {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   font-family: 'Pacifico', cursive;
-  /*background-color: rgba(0, 0, 0, 0.65);*/
 }
 
 .email {
   color: white;
   font-weight: 600;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .second {
@@ -50,16 +49,32 @@ body {
 }
 
 @media (orientation: landscape) {
-  .icon {
-    top: 50%;
+  .video {
+    margin-top: 2%;
+  }
+  .video > video {
+    height: 150px;
+    width: 150px;
   }
   .container {
-    padding-top: 15px;
+    padding-top: 1px;
+  }
+  .text > p {
+    font-size: 35px;
+  }
+  .email {
+    font-size: 12px;
+  }
+  .second {
+    padding-top: 10px;
   }
 }
 
 @media (min-width: 768px) {
-  .icon > img {
+  .video {
+    margin-top: 5%;
+  }
+  .video > video {
     height: 300px;
     width: 300px;
   }
