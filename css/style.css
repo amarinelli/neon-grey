@@ -5,6 +5,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .video {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .video > video {
@@ -33,7 +34,7 @@ body {
 .text > p {
   color: white;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 800;
   font-family: 'Pacifico', cursive;
 }
 
@@ -50,7 +51,7 @@ body {
 
 @media (orientation: landscape) {
   .video {
-    margin-top: 2%;
+    margin-top: 5%;
   }
   .video > video {
     height: 150px;
@@ -72,7 +73,7 @@ body {
 
 @media (min-width: 768px) {
   .video {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .video > video {
     height: 300px;
